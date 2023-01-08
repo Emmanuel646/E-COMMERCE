@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Info - Jeux 64{% endblock %}</title>
+        <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
+        {% block stylesheets %}
+            <link href="../assets/css/style.css" rel="stylesheet">
+        {% endblock %}
+
+        {% block javascripts %}
+            <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+            <script src="{{ asset('assets/js/script.js') }}"></script>
+        {% endblock %}
+    </head>
+    <body>
+    {% block header %}
+        {% include "partial/_header.html.twig" %}
+    {% endblock %}
+        {% block body %}{% endblock %}
+    {% block footer %}
+        {% include "partial/_footer.html.twig" %}
+    {% endblock %}
+    </body>
+</html>

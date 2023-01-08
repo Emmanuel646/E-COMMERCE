@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+    <div class="container">
+        <section class="row">
+            {% for product in products %}
+                {% if product.category == 'title-course' %}
+                    <div class="col-12 my-3" style="height:70px; margin: 5px">
+                        <h2 class="d-flex justify-content-center p-1">{{ product.name }}</h2>
+                    </div>
+                    <div class="row title-image mb-5">
+                        <img src="../assets/images/course.jpg">
+                    </div>
+                {% elseif product.category == 'jeux-course' %}
+                    <div class="col-6 mb-3">
+                        <div class="card h-100">
+                            <div class="card-title">
+                                <h3 class="card-title text-center">{{ product.name }}</h3>
+                                <div class="card-body text-center">
+                                    <p>Ce jeu vidéo diponible pour la console {{ product.format }}, conviendra à amateur de sport de course.</p>
+                                    <p>Prix TTC est de : {{ product.price }} €</p>
+                                    {#<a href="#" class="btn btn-primary">Ajouter au panier : <br> {{ product.name }}</a>#}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </section>
+    </div>
+
+{% endblock %}

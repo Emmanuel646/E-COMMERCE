@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+         
+    <div class="container"> 
+        <section class="row m-auto">
+            <h1 class="text-center"> INFO ET JEUX 64</h1>
+            <p class="text-center"> Avenue d'Espagne<br>64600 ANGLET<br><br>Tel : 05 59 12 34 56
+        </section>
+    </div>
+    <div class="row">
+        <h2 class="m-auto col-11 text-center"> Formulaire de contact</h2>
+        <p class="mt-2 text-center">Vous avez un question à nous poser,
+        n'hésitez pas à nous contacter soit par téléphone ci-dessus soit par le formulaire de contact ci-dessous.</p>
+        <div class="col-11 m-auto">
+            <label for="FormControlInput1" class="form-label">Nom :</label>
+                <input type="email" class="form-control" id="FormControlInput1" placeholder="Saisissez votre nom ...">
+            
+            <label for="FormControlInput1" class="form-label">Prénom :</label>
+                <input type="email" class="form-control" id="FormControlInput1" placeholder="Saisissez votre Prénom ...">
+            
+            <label for="FormControlInput1" class="form-label">Email :</label>
+                <input type="email" class="form-control" id="FormControlInput1" placeholder="Saisissez votre Email ...">
+        </div>
+        <div class="m-auto col-11">
+            <label for="FormControlTextarea1" class="form-label">Message :</label>
+            <textarea class="form-control" id="FormControlTextarea1" rows="3" placeholder="Saisissez votre message ..."></textarea>
+        </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <div class="text-center">
+            <button type="submit" class="btn btn-success col-3 p-3 my-3" id="contact" onclick="alert('Votre message est bien envoyé')">Envoyer mon message -></button>
+        </div>
+    </div>
+{% endblock %}

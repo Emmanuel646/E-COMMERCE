@@ -1,0 +1,92 @@
+body {
+    background-color: darkturquoise;
+    color: rgb(11, 7, 87);
+}
+
+/*@media screen and (min-height: 720px) { 
+    body {
+        background-color: rgb(144, 218, 147);
+    }
+}*/
+
+h2 {
+    background-color: honeydew;
+    border-radius: 15px 15px 15px 15px;
+
+}
+
+#inscript {
+    background-color: rgb(11, 7, 87);
+    color: white;
+}
+
+.title-image {
+    display: flex;
+    margin-left: 30%;
+    justify-content: center;
+    height: 300px;
+    width: 500px;
+}
+
+.image {
+    display: flex;
+    height: 80px;
+    width: 120px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.nav-footer{
+    background-color: rgb(3, 28, 82);
+    margin-top: 15px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+.diapo{
+    position: relative;
+    overflow: hidden;
+}
+
+.elements{
+    display: flex;
+}
+
+.element{
+    flex: 1 0 100%;
+    position: relative;
+}
+
+.element > img{
+    width: auto;
+    height: 150px;
+    margin-left: 50px;
+}
+
+.caption{
+    position: absolute;
+    color: black;
+    bottom:5%;
+    left:80%;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#nav-gauche, #nav-droite{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    cursor: pointer;
+
+}
+
+#nav-droite{
+    right:0;
+}

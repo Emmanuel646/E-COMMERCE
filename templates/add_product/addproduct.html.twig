@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Formulaire d'ajout de produit{% endblock %}
+
+{% block body %}
+
+    <section class="container">
+        <div class="row">
+            <div class="col">   
+                <h1 class="d-flex justify-content-center h3 m-3 font-weight-normal">Formulaire d'ajout de produit</h1>
+
+                {{ form_start(productForm) }}
+                    <fieldset class="mb-3">
+                        <legend class="m-3">DESCRIPTION DU PRODUIT A AJOUTER AU SITE :
+                            {{ form_row(productForm.name) }}
+                            {{ form_row(productForm.slug) }}
+                            {{ form_row(productForm.touch) }}
+                            {{ form_row(productForm.format) }}
+                            {{ form_row(productForm.category) }}
+                            {{ form_row(productForm.price) }}
+                    </fieldset>
+
+                    <button type="submit" class="btn btn-primary my-3" onclick="activeConfirme()">Ajouter le produit</button>
+                {{ form_end(productForm) }}
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
