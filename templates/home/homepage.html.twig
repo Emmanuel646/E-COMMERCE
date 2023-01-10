@@ -4,16 +4,16 @@
 {% block body %}
          
     <div class="container"> 
-        <section class="row d-flex justify-content-center">
+        <section class="row justify-content-center">
             {% for category in categories %}
                 {% if category.parent == null %}
                     <div class="col-12" style="height:70px; margin-top:5px">
                         <h2 class="d-flex justify-content-center p-1">{{ category.name }}</h2>
                     </div>
                 {% else %}
-                    <div class="col-auto mb-3">
+                    <div class="col-lg-4 col-sm-12 mb-3">
                         <div class="card h-100">
-                            <div class="card-body">
+                            <div class="home-card card-body">
                                 <h3 class="card-title d-flex justify-content-center">{{ category.name }}</h3>
                                 {% if category.slug == 'clavier' %}
                                 <div class="row">
